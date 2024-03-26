@@ -6,6 +6,14 @@ body,html {
     margin: 0;
 }
 
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+
 .header {
     background-color: #2A2A2A;
 
@@ -189,14 +197,19 @@ body,html {
     padding: 50px;
     margin: 0;
 }
-.bloco4__img img {
+.bloco4__iframe iframe {
     outline: 1px solid #2a2a2a5b;
     box-shadow: 0 0 3px 2px #2A2A2A;
+
+    width: 1200px;
 }
-.bloco4 p {
+.bloco4__contato {
+    width: 1200px;
+}
+.bloco4__contato p {
     color: #2A2A2A;
     font-size: 2.5rem;
-    text-align: center;
+    text-align: right;
 }
 
 
