@@ -1,0 +1,171 @@
+/*
+Background Top Header: #162028
+
+Cor do texto no menu: #425564
+
+Cor dos textos: #555
+
+Cor de fundo do box com imagem de detalhe: #003d52
+
+Cor de fundo do footer: #0b171f
+
+Cor de texto do footer: #6f8597
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: Roboto, sans-serif;
+
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #162028;
+    color: #fff;
+    
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    font-family: 'Viaoda Libre';
+    font-size: 3rem;
+    font-weight: 100;
+
+    margin-left: 200px;
+}
+.header__menu ul {
+    list-style: none;
+}
+.header__menu ul li {
+    font-size: 2rem;
+
+    display: inline-block;
+}
+.header__menu ul li a {
+    color: #425564;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    height: 100px;
+    display: inline-block;
+    align-content: center;
+    padding: 0px 30px;    
+}
+.header__menu ul li a:hover {
+    color: white;
+    background-color: #212a31; 
+}
+
+.img__main {
+    background-image: url(imagens/topo.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.section1 {
+    height: 100vh;
+}
+
+.article1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.article1 h2 {
+    font-family: 'Viaoda Libre';
+    font-size: 5rem;
+
+    width: fit-content;
+    margin: 0 auto 50px ;
+}
+.article1 p {
+    color: #555;
+    
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+
+    text-align: center;
+
+    width: 60%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+}
+.modelo h3{
+    color: #353535;
+    font-size: 2.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.modelo p {
+    color: #555;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.img__modelo {
+    background-size: cover;
+
+    height: calc(1.4*192px);
+    width: calc(1.4*250px);
+}
+
+.article2 {
+    background-color: #003d52;
+    color: white;
+
+    background-image: url(imagens/bg_detalhe.png);
+    background-size: 40%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    height: calc(100vh - 63px - 30px);
+
+    padding: 30px 100px;
+}
+.article2 h1 {
+    font-family: 'viaoda libre';
+    font-size: 7rem;
+}
+.article2 p {
+    font-size: 3rem;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    width: 1200px;
+}
+
+.footer {
+    background-color: #0b171f;
+    padding: 20px;
+}
+.footer p {
+    color: #6f8597;
+
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-align: center;
+
+    margin: 0;
+}

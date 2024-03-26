@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(0, 43, 122);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.main-title {
+    color: #20b8ff;
+    text-align: center;
+}
+
+.lista {
+    background-color: rgb(154, 182, 207);
+    height: 570px;
+    width: 650px;
+    margin: auto;
+    overflow: hidden scroll;
+    border-radius: 5px;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, .6);
+}
+
+.contato {
+    padding: 20px;
+    border-bottom: 3px solid white;
+    height: 150px;
+    z-index: 2;
+}
+.contato:hover {
+    background-color: #404f7a;
+    color: rgb(205, 232, 255);
+}
+.contato .icons {
+    visibility: hidden;
+}
+.contato:hover .icons {
+    visibility: visible;
+}
+
+.pfp {
+    border-radius: 50%;
+    border: 7px outset rgb(53, 95, 185);
+    float: left;
+    margin-right: 30px;
+}
+
+.contato-texto {
+    position: relative;
+    top: -20px;
+}
+
+.nome {
+    font-size: 30px;
+}
+.email {
+    font-size: 20px;
+}
+
+.icons {
+    float: right;
+}

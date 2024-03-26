@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    color: aliceblue;
+}
+
+body {
+    background-color: #0d1220;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    width: 80%;
+    min-width: 640px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(0, 0, 0);
+
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+header:hover {
+    outline: 2px solid #9aff16;
+}
+.header__texto {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    list-style-type: none;
+    text-align: right;
+}
+.header__menu li a {
+    padding: 14px;
+    color: aliceblue;
+    
+    font-weight: bold;
+
+    text-decoration: none;
+}
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+.menu__suporte a{
+    background-color: #9aff16;
+    color: rgb(5, 7, 12);
+    border-radius: 10px;
+}
+
+.titulo-plano {
+    font-size: 60px;
+    padding: 20px 0px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    border-bottom: 2px solid #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.plano {
+    background-color: #1c212b;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0px 15px 12px -3px #000;
+
+    width: 30%;
+    min-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+.plano:hover {
+    box-shadow: 0px 7px 12px -3px #9aff16;
+}
+.plano__tipo {
+    font-size: 27px;
+    text-transform: uppercase;
+
+    margin: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid #9aff16;
+}
+.plano__preco {
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+.plano__preco__mes {
+    font-size: 15px;
+    margin: 0;
+}
+.plano__vantagens {
+    color: #b2b2bd;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    flex-grow: 1;
+    line-height: 2;
+
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding-left: 16px;
+}
+.plano__vantagens li::marker {
+    color: #9aff16;
+}
+
+.plano__button {
+    text-align: center;
+}
+.plano__button__link {
+    display: inline-block;
+
+    width: 100%;
+    padding: 15px 0px;
+    margin: 0;
+    
+    font-size: 17px;
+    font-weight: bold;
+
+    background-color: #9aff16;
+    color: rgb(5, 7, 12);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.plano__button__link:hover {
+    outline: 2px solid #9aff16;
+    background-color: #1c212b;
+    color: aliceblue;
+}

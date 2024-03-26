@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(226, 218, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 42px;
+    background-color: rgb(166, 166, 218);
+    color: rgb(17, 0, 94);
+    padding: 6px 0px;
+    margin-bottom: 0;
+    border-bottom: 5px inset #00004e;
+}
+
+h2 {
+    font-size: 32px;
+    background-color: #bababe;
+    color: #000074;
+    padding: 7px;
+    border-bottom: 4px solid #00009c;
+}
+
+h3 {
+    font-size: 27px;
+    margin-left: 50px;
+}
+
+p {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(44, 44, 44);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #1414e9;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style-position: outside;
+    color: rgb(44, 44, 44);
+}
+
+#subtitulo {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    background-color: #6b6bff;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+.menu {
+    text-align: right;
+    margin-top: 1px;    
+    margin-bottom: 50px;
+}
+
+.menu li {
+    list-style: none;
+    display: inline;
+    margin-right: 0;
+    margin-left: 1px;
+}
+
+.menu a {
+    background-color: #b2b2c7;
+    color: #00004e;
+    padding: 16px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: #00004e;
+    color: white;
+}

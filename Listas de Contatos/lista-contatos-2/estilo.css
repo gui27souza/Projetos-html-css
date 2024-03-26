@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(41, 68, 139);
+    margin: 0 150px;
+    padding: 0;
+
+    background-image: url(../imagens/pexels-jonny-lew-1121123.jpg);
+    background-size: cover;
+}
+
+.grade {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.contato {
+    background-color: #dd6cff;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 1);
+
+    width: 370px;
+    min-width: 370px;
+    height: fit-content;
+
+    margin: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.contato__pfp {
+    border-radius: 50%;
+    border: 5px solid #dd6cff;
+}
+.alinha-pfp {
+    text-align: center;
+    margin-top: 153px;
+}
+.contato__nome {
+    font-size: 27px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.contato__email {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.contato__buttons {
+    background-color: #c64cff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 0;
+    border-radius: 0px 0px 15px 15px;
+}
+.contato__buttons li {
+    flex: 1;
+    align-self: end;
+    
+}
+.contato__buttons a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+.contato__buttons__edit:hover {
+    background-color: #b032eb;
+    
+    border-radius: 0 0 0 14px;
+}
+.contato__buttons__delete:hover {
+    background-color: #b032eb;
+    
+    border-radius: 0 0 14px 0;
+}
