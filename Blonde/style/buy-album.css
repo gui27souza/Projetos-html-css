@@ -1,0 +1,81 @@
+.buy-album {
+    background-image: url(../images/buy-bg-menor.png);
+    background-position: bottom;
+
+    margin: 0;
+
+    height: calc(100vh);
+    align-content: center; 
+}
+.buy-album__container {
+    height: calc(100vh - 100px);
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item {
+    background-color: #dddddd;
+
+    border-radius: 20px;
+
+    padding: 50px 20px;
+    width: 300px;
+    height: 350px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: padding .3s ease-in-out .1s;
+}
+.item:hover {
+    transition: padding .3s ease-in-out .1s;
+    padding: 80px 40px;
+}
+.item:hover img {
+    transition: all .3s ease-in-out .1s;
+    height: 230px;
+    width: 230px;
+}
+.item:hover a {
+    transition: padding .2s ease-in-out .1s;
+    padding: 20px 25px;
+}
+.item img {
+    transition: all .3s ease-in-out .1s;
+    height: 200px;
+    width: 200px;
+}
+.item p {
+    font-size: 3rem;
+
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+.item p a {
+    color: #dddddd;
+    background-color: #2c2c2c;
+
+    border-radius: 10px;
+
+    padding: 15px 20px;
+
+    transition: padding .2s ease-in-out .1s;
+}
+
+
+#blonde-cd {
+    height: 250px; 
+    width: 250px; 
+    position: relative; 
+    bottom: 25px;
+}
+.item:hover #blonde-cd {
+    transition: all .3s ease-in-out .1s;
+    height: 300px;
+    width: 300px;
+}
