@@ -3,6 +3,8 @@
     src: url('../fonts/Blonde.otf') format('opentype');
 }
 
+
+
 :root {
     font-size: 62.5%;
     font-family: monospace;
@@ -31,6 +33,7 @@ html, body {
 .header__title h1{
     font-family: 'Blonde';
     font-size: 4rem;
+    letter-spacing: -2px;
 
     position: relative;
     bottom: 10px;
@@ -79,6 +82,14 @@ html, body {
 
     height: 600px;
     width: 600px;
+
+    transition: all .3s ease-in-out .1s;
+}
+.hero__image img:hover {
+    height: 700px;
+    width: 700px;
+
+    transition: all .3s ease-in-out .1s;
 }
 .hero__text {
     color: #2c2c2c;
@@ -209,6 +220,8 @@ html, body {
 
     box-shadow: 0 0 0 #dddddd;
 
+    border-radius: 30px;
+
     transition: all .2s ease-in-out .1s;
 }
 .artwork__container__art img:hover {
@@ -216,6 +229,8 @@ html, body {
     width: 400px;
 
     box-shadow: 0 0 70px #dddddd;
+
+    border-radius: 0;
 
     transition: all .2s ease-in-out .1s;
 }
