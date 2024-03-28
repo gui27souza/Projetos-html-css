@@ -11,3 +11,273 @@
 html, body {
     margin: 0;   
 }
+
+
+
+.header {
+    background-color: #f1f1f1;
+    box-shadow: 0 7px 7px #2c2c2c;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 100px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header__title h1{
+    font-family: 'Blonde';
+    font-size: 4rem;
+
+    position: relative;
+    bottom: 10px;
+    margin-left: 100px;
+}
+.header__menu ul {
+    margin-right: 100px;
+}
+.header__menu ul li {
+    font-size: 3rem;
+
+    margin: 0;
+
+    display: inline-block;
+}
+.header__menu ul li a {
+    color: black;
+    text-decoration: none;
+
+    padding: 36px 30px;
+
+    transition: background-color .3s ease-in-out;
+}
+.header__menu ul li a:hover {
+    transition: background-color .3s ease-in-out;
+    background-color: #e5e5e5;
+}
+
+
+
+.hero {
+    background-image: url(../images/hero-bg-black.png);
+    background-position: bottom;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero__image img {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+    z-index: 0;
+
+    height: 600px;
+    width: 600px;
+}
+.hero__text {
+    color: #2c2c2c;
+    font-size: 3rem;
+    font-style: italic;
+
+    position: relative;
+    bottom: 50px;
+    right: 50px;
+    z-index: 0;
+    
+    width: 600px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.hero__text ol {
+    list-style-position: outside;
+}
+
+
+
+.buy-album {
+    background-image: url(../images/buy-bg-menor.png);
+    background-position: bottom;
+
+    margin: 0;
+
+    height: calc(100vh);
+    align-content: center; 
+}
+.buy-album__container {
+    height: calc(100vh - 100px);
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item {
+    background-color: #dddddd;
+
+    border-radius: 20px;
+
+    padding: 50px 20px;
+    width: 300px;
+    height: 350px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: padding .3s ease-in-out .1s;
+}
+.item:hover {
+    transition: padding .3s ease-in-out .1s;
+    padding: 80px 40px;
+}
+.item:hover img {
+    transition: all .3s ease-in-out .1s;
+    height: 230px;
+    width: 230px;
+}
+.item:hover a {
+    transition: padding .2s ease-in-out .1s;
+    padding: 20px 25px;
+}
+.item img {
+    transition: all .3s ease-in-out .1s;
+    height: 200px;
+    width: 200px;
+}
+.item p {
+    font-size: 3rem;
+
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+.item p a {
+    color: #dddddd;
+    background-color: #2c2c2c;
+
+    border-radius: 10px;
+
+    padding: 15px 20px;
+
+    transition: padding .2s ease-in-out .1s;
+}
+
+
+#blonde-cd {
+    height: 250px; 
+    width: 250px; 
+    position: relative; 
+    bottom: 25px;
+}
+.item:hover #blonde-cd {
+    transition: all .3s ease-in-out .1s;
+    height: 300px;
+    width: 300px;
+}
+
+
+
+.about {
+    background-image: url(../images/about.png);
+    background-position: bottom;
+
+    height: calc(100vh - 100px);
+
+    display: flex;
+}
+.about__container {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.about__container__text {
+    align-self: center;
+
+    width: 50%;
+    margin-right: 100px;
+}
+.about__container__text h1 {
+    font-family: 'Blonde';
+    font-size: 5rem;
+}
+.about__container__text p {
+    font-size: 3.3rem;
+
+    text-align: justify;
+}
+.about__container img {
+    width: 900px;
+}
+.about__container__text__button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.about__container__text__button a {
+    color: #dddddd;
+    background-color: #2c2c2c;
+
+    font-size: 3rem;
+    padding: 15px 20px;
+
+    border-radius: 10px;
+
+    margin-top: 15px 0 0;
+
+    transition: padding .2s ease-in-out .1s;
+}
+.about__container__text__button a:hover {
+    transition: padding .2s ease-in-out .1s;
+    padding: 20px 25px;
+}
+#space {
+    letter-spacing: 40px;
+}
+
+
+
+.artwork {
+    height: 100vh;
+}
+.artwork__container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.artwork__container__art {
+   
+}
+.artwork__container__art img {
+    height: 300px;
+    width: 300px;
+}
+
+
+
+.footer {
+    color: #dddddd;
+    background-color: #2c2c2c;
+
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
