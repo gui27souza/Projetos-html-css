@@ -56,13 +56,13 @@ html, body {
 }
 .header__menu ul li a:hover {
     transition: background-color .3s ease-in-out;
-    background-color: #e5e5e5;
+    background-color: #cacaca;
 }
 
 
 
 .hero {
-    background-image: url(../images/hero-bg-black.png);
+    background-image: url(../images/backgrounds/home.png);
     background-position: bottom;
 
     height: 100vh;
@@ -103,7 +103,7 @@ html, body {
 
 
 .buy-album {
-    background-image: url(../images/buy-bg-menor.png);
+    background-image: url(../images/backgrounds/buy.png);
     background-position: bottom;
 
     margin: 0;
@@ -124,6 +124,7 @@ html, body {
     background-color: #dddddd;
 
     border-radius: 20px;
+    box-shadow: 0 0 0 #dddddd;
 
     padding: 50px 20px;
     width: 300px;
@@ -134,11 +135,12 @@ html, body {
     align-items: center;
     justify-content: space-between;
 
-    transition: padding .3s ease-in-out .1s;
+    transition: all .3s ease-in-out .1s;
 }
 .item:hover {
-    transition: padding .3s ease-in-out .1s;
+    transition: all .3s ease-in-out .1s;
     padding: 80px 40px;
+    box-shadow: 0 0 70px #dddddd;
 }
 .item:hover img {
     transition: all .3s ease-in-out .1s;
@@ -186,9 +188,43 @@ html, body {
 
 
 
-.about {
-    background-image: url(../images/about.png);
+.artwork {
+    background-image: url(../images/backgrounds/art.png);
     background-position: bottom;
+    height: 100vh;
+}
+.artwork__container {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.artwork__container__art img {
+    height: 300px;
+    width: 300px;
+
+    box-shadow: 0 0 0 #dddddd;
+
+    transition: all .2s ease-in-out .1s;
+}
+.artwork__container__art img:hover {
+    height: 400px;
+    width: 400px;
+
+    box-shadow: 0 0 70px #dddddd;
+
+    transition: all .2s ease-in-out .1s;
+}
+
+
+
+.about {
+    background-image: url(../images/backgrounds/about.png);
+    background-position: top;
 
     height: calc(100vh - 100px);
 
@@ -235,34 +271,15 @@ html, body {
 
     margin-top: 15px 0 0;
 
-    transition: padding .2s ease-in-out .1s;
+    transition: all .2s ease-in-out .1s;
 }
 .about__container__text__button a:hover {
-    transition: padding .2s ease-in-out .1s;
+    transition: all .2s ease-in-out .1s;
     padding: 20px 25px;
+    box-shadow: 0 0 70px #2c2c2c;
 }
 #space {
     letter-spacing: 40px;
-}
-
-
-
-.artwork {
-    height: 100vh;
-}
-.artwork__container {
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.artwork__container__art {
-   
-}
-.artwork__container__art img {
-    height: 300px;
-    width: 300px;
 }
 
 
