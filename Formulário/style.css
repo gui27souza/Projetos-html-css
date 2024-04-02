@@ -1,4 +1,4 @@
-:root {
+html {
     color: white;
     background-color: #181718;
 
@@ -27,7 +27,7 @@ form {
 .container {
     border: none;
 
-    padding: 30px 15px;
+    padding: 30px 15px 15px;
 
     display: flex;
     flex-flow: column;
@@ -36,7 +36,11 @@ form {
 }
 
 .titulo legend{
-    font-size: 3rem;
+    color: rgb(206, 206, 206);
+
+    font-size: 2.7rem;
+    font-weight: bold;
+
     padding: 15px;
 }
 
@@ -89,28 +93,18 @@ form {
     font-size: 1.8rem;
     padding: 14px;
 }
-
-#nome:focus:invalid {
-    border-bottom: 2px solid #a5151f;
-}
-#nome:focus {
-    border-bottom: 2px solid #349b43;
+.button input:active {
+    background-color: #1b1b1b;
 }
 
-#email:focus:invalid{
-    border-bottom: 2px solid #a5151f;
-}
-#email:focus:valid{
-    border-bottom: 2px solid #349b43;
-}
-
-#assunto:focus {
-    border-bottom: 2px solid #349b43;
-}
-
+#nome:focus:invalid,
+#email:focus:invalid,
 #mensagem:focus:invalid {
     border-bottom: 2px solid #a5151f;
 }
+#nome:focus,
+#email:focus,
+#assunto:focus,
 #mensagem:focus {
     border-bottom: 2px solid #349b43;
 }

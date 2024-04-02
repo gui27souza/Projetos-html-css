@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+    <form action="" autocomplete="off">
         <fieldset class="container">
             <div class="titulo">
                 <legend>
@@ -18,7 +18,7 @@
                 <input type="text" name="nome" id="nome" class="input-texto" minlength="1" required>
             </div>
             <div class="item">
-                <label for="email">Email</label>
+                <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" class="input-texto" required>
             </div>
             <div class="item">
@@ -27,7 +27,7 @@
             </div>
             <div class="item">
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="8" class="input-texto" minlength="10" required></textarea>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="8" class="input-texto" minlength="10" maxlength="1500" required></textarea>
             </div>
             <div class="button">
                 <input type="submit" value="Enviar">
