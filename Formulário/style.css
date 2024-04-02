@@ -1,0 +1,116 @@
+:root {
+    color: white;
+    background-color: #181718;
+
+    font-size: 62.5%;
+    font-family: sans-serif;
+
+    padding: 30px;
+
+    height: 80%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+form {
+    background-color: #0e0f10;
+
+    width: 600px;
+    margin: auto;
+
+    box-shadow: 0 3px 2px rgba(176, 175, 176, 0.1);
+}
+
+.container {
+    border: none;
+
+    padding: 30px 15px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo legend{
+    font-size: 3rem;
+    padding: 15px;
+}
+
+.item {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.item label {
+    font-size: 1.6rem;
+}
+
+.item textarea {
+    resize: none;
+}
+
+.input-texto {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+
+    color: white;
+    background-color: #0b0a0c;
+
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #b0afb0;
+
+    padding: 8px;
+}
+
+.input-texto:focus {
+    background-color: #2a2729;
+
+    outline: none;
+}
+
+.button {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+.button input {
+    color: white;
+    background-color: #2a2729;
+
+    border: none;
+
+    font-size: 1.8rem;
+    padding: 14px;
+}
+
+#nome:focus:invalid {
+    border-bottom: 2px solid #a5151f;
+}
+#nome:focus {
+    border-bottom: 2px solid #349b43;
+}
+
+#email:focus:invalid{
+    border-bottom: 2px solid #a5151f;
+}
+#email:focus:valid{
+    border-bottom: 2px solid #349b43;
+}
+
+#assunto:focus {
+    border-bottom: 2px solid #349b43;
+}
+
+#mensagem:focus:invalid {
+    border-bottom: 2px solid #a5151f;
+}
+#mensagem:focus {
+    border-bottom: 2px solid #349b43;
+}
