@@ -7,11 +7,12 @@
     height: 100%;
     margin: 0;
 
-    --cor-base: 270, 60%;
+    --cor-hue: 180;
+    --cor-saturation: 70%;
 
-    --cor-principal: hsl(var(--cor-base), 50%);
-    --cor-background: hsl(var(--cor-base), 65%);
-    --cor-hover: hsl(var(--cor-base), 40%);
+    --cor-principal: hsl(var(--cor-hue), var(--cor-saturation), 50%);
+    --cor-background: hsl(var(--cor-hue), var(--cor-saturation), 65%);
+    --cor-hover: hsl(var(--cor-hue), var(--cor-saturation), 40%);
 }
 
 body {
