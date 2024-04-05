@@ -7,16 +7,11 @@
     height: 100%;
     margin: 0;
 
-    --cor-base: 270, 100%, 40%;
+    --cor-base: 270, 60%;
 
-    --cor-principal: hsl(var(--cor-base));
-    --cor-background: hsl(var(--cor-base)); /* Mais claro */
-    --cor-hover: hsl(var(--cor-base) / 90%); /* Mais escuro */
-
-    /* --cor: ;
-    --cor-principal: #663399;
-    --cor-background: #9364ff;
-    --cor-hover: #3f1964; */
+    --cor-principal: hsl(var(--cor-base), 50%);
+    --cor-background: hsl(var(--cor-base), 65%);
+    --cor-hover: hsl(var(--cor-base), 40%);
 }
 
 body {
@@ -28,7 +23,7 @@ body {
 }
 
 .header {
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 
     margin-top: 8rem;
     padding: 0 1.6rem;
@@ -59,7 +54,6 @@ body {
     justify-content: space-between;
 
     width: 100rem;
-    /* height: 15rem; */
 
     background-color: aliceblue;
 
