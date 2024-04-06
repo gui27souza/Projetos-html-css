@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <title>Menu</title>
     <link rel="stylesheet" href="Menu dos Projetos/style.css">
+
+    <style>
+        :root {
+            font-family: Roboto;
+            font-size: 62.5%;
+
+            height: 100%;
+            margin: 0;
+
+            --cor-hue: 180;
+            --cor-saturation: 70%;
+
+            --cor-principal: hsl(var(--cor-hue), var(--cor-saturation), 50%);
+            --cor-background: hsl(var(--cor-hue), var(--cor-saturation), 65%);
+            --cor-hover: hsl(var(--cor-hue), var(--cor-saturation), 40%);
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -173,5 +190,23 @@
             </div>
         </div>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            atualizarCorBase(); 
+            setInterval(atualizarCorBase, 100000); 
+        });
+    
+        function atualizarCorBase() {
+            const dataAtual = new Date();
+            const horas = dataAtual.getHours();
+            const minutos = dataAtual.getMinutes();
+            const totalMinutos = horas * 60 + minutos;
+            const hue = Math.round((totalMinutos / 1440) * 360);
+    
+            document.documentElement.style.setProperty('--cor-hue', hue.toString());
+        }
+    </script>
+    
 </body>
 </html>
