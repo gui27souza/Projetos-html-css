@@ -8,12 +8,15 @@
 }
 
 body {
-    margin: 0;
+    background-image: url(../Relógio/images/night.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
 
     background-color: rgb(33, 34, 54);
     color: aliceblue;
-
-    height: 80vh;
+    
+    margin: 0;
+    height: 100vh;
 
     display: flex;
     flex-flow: column;
@@ -27,7 +30,13 @@ body {
 
     padding: 1.5rem;
 
-    border-radius: 1rem;
+    border-radius: 40% 0;
+    transition: all .7s ease;
+}
+.header:hover {
+    transition: all .7s ease;
+    padding: 2.3rem;
+    border-radius: 1.5rem;
 }
 .header h1 {
     font-size: 5rem;
@@ -37,11 +46,25 @@ body {
 }
 
 .container {
-    background-color: rgb(74, 74, 160);
+    background-color: rgba(74, 74, 160, 0.281);
+    backdrop-filter: blur(1rem) saturate(200%);
+
+    width: 40rem;
 
     padding: 2rem;
 
     border-radius: 1rem;
+
+    box-shadow: 0 1.5rem 4rem  rgb(18, 117, 101);
+
+    display: flex;
+    flex-flow: column;
+
+    transition: all .7s ease;
+}
+.container:hover {
+    transition: all .7s ease;
+    padding: 3rem;
 }
 
 .container__numero {
@@ -52,15 +75,28 @@ body {
 
 .container__actions {
     margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .container__actions button {
     font-size: 2rem;
 
     border: none;
-    background-color: rgb(26, 26, 78);
+    background-color: rgb(18, 117, 101);
     color: aliceblue;
 
-    padding: .5rem 1rem;
+    padding: 1rem 1rem;
 
     border-radius: .5rem;
+
+    transition: all .5s ease;
+}
+
+.container__actions button:hover {
+    transition: all .5s ease;
+    padding: 2rem;
+    border-radius: 0;
+    border: .3rem solid white;
 }
