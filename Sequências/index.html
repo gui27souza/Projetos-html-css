@@ -26,23 +26,21 @@
             </div>
             <div class="item__left">
                 <label for="intervalo">Intervalo</label>
-                <input type="number" id="intervalo">         
+                <input type="number" id="intervalo" value="1">         
             </div>
             <div class="item__left">
                 <label for="separador">Separar por</label>
                 <input type="text" id="separador" value=" ">
             </div>
             <div class="item__left">
-                <label>
-                    <input type="button" value="Calcular" onclick="calcular()">
-                </label>
+                <input type="button" value="Calcular" onclick="calcular()" id="calcular">
             </div>
         </div>
         <hr>
         <div class="container__right">
             <div class="item__right">
                 <label for="saida">Saída</label>
-                <textarea name="saida" id="saida" cols="30" rows="10" readonly></textarea>
+                <textarea name="saida" id="saida" cols="30" rows="16" readonly></textarea>
             </div>
         </div>
     </main>

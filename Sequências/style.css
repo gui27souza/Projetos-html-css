@@ -8,6 +8,9 @@
 
 body {
     background-color: #262544;
+    background-image: url(images/background.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
 
     height: 100vh;
     margin: 0;
@@ -31,7 +34,10 @@ body {
 .header h1 {
     color: #f0f8ff;
 
+    font-size: 5rem;
     font-weight: 500;
+
+    width: max-content;
 
     margin: 0;
     padding: 1rem;
@@ -40,8 +46,10 @@ body {
 
 
 .container {
-    background-color: #f0f8ff;
-    box-shadow: 1rem 1rem .3rem #151422;
+    color: #f0f8ff;
+
+    border: .1rem solid #f0f8ff;
+    backdrop-filter: blur(.5rem) saturate(100%);
 
     padding: 2rem;
 
@@ -58,18 +66,45 @@ body {
     gap: 6rem;
 }
 
-.item__left {
+.container__left {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.item__left, .item__right {
     display: flex;
     flex-flow: column;
 }
+.item__left input, .item__right textarea {
+    background-color: #262544;
+    color: #f0f8ff;
+    border: .1rem solid #f0f8ff;
 
-.item__right {
-    display: flex;
-    flex-flow: column;
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 2rem;
+
+    padding: 1rem;
 }
 
 .item__left label, .item__right label {
     font-size: 2rem;
+    font-weight: 600;
+}
+
+#calcular {
+    height: 4rem;
+    padding: 0;
+
+    background-color: #151422;
+    color: #f0f8ff;
+    border: .2rem solid #262544;
+
+    font-family: montserrat;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 textarea {
