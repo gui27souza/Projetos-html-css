@@ -1,7 +1,7 @@
 function calcular() {
-    let inicio = Number(document.getElementById('inicio').value)
-    let fim = Number(document.getElementById('fim').value)
-    let intervalo = Number(document.getElementById('intervalo').value)
+    let inicio = Number.parseInt(document.getElementById('inicio').value)
+    let fim = Number.parseInt(document.getElementById('fim').value)
+    let intervalo = Number.parseInt(document.getElementById('intervalo').value)
 
     
     let separador = document.getElementById('separador').value

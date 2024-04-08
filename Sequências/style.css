@@ -5,7 +5,10 @@
     font-family: montserrat;
 }
 
+
 body {
+    background-color: #262544;
+
     height: 100vh;
     margin: 0;
 
@@ -15,14 +18,57 @@ body {
     flex-flow: column;
 }
 
-.container {
-    display: flex;
+
+
+.header {
+    background-color: #151422;
+    border: .2rem solid #f0f8ff;
+    
+    margin-bottom: 3rem;
+    
+    border-radius: 2rem;
+}
+.header h1 {
+    color: #f0f8ff;
+
+    font-weight: 500;
+
+    margin: 0;
+    padding: 1rem;
 }
 
-.item__left label {
-    font-size: 2rem;
+
+
+.container {
+    background-color: #f0f8ff;
+    box-shadow: 1rem 1rem .3rem #151422;
+
+    padding: 2rem;
+
+    border-radius: 2rem;
+
+    display: flex;
+    gap: 5rem;
+
+    transition: all .6s ease;
 }
-.item__right label {
+.container:hover {
+    transition: all .6s ease;
+    padding: 3rem;
+    gap: 6rem;
+}
+
+.item__left {
+    display: flex;
+    flex-flow: column;
+}
+
+.item__right {
+    display: flex;
+    flex-flow: column;
+}
+
+.item__left label, .item__right label {
     font-size: 2rem;
 }
 
