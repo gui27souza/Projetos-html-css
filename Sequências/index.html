@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequências</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__title">
+            <h1>
+                Calculadora de Sequências
+            </h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="container__left">
+            <div class="item__left">
+                <label> Início
+                    <input type="number" id="inicio">
+                </label>
+            </div>
+            <div class="item__left">
+                <label> Final
+                    <input type="number" id="fim">
+                </label>
+            </div>
+            <div class="item__left">
+                <label> Intervalo
+                    <input type="number" id="intervalo">
+                </label>
+            </div>
+            <div class="item__left">
+                <label> Separar por: 
+                    <input type="text" id="separador" value=" ">
+                </label>
+            </div>
+            <div class="item__left">
+                <label>
+                    <input type="button" value="Calcular" onclick="calcular()">
+                </label>
+            </div>
+        </div>
+        <div class="container__right">
+            <div class="item__right">
+                <label> Saída
+                    <textarea name="saida" id="saida" cols="30" rows="10" readonly></textarea>
+                </label>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

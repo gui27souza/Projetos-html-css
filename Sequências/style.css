@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: montserrat;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.container {
+    display: flex;
+}
+
+.item__left label {
+    font-size: 2rem;
+}
+.item__right label {
+    font-size: 2rem;
+}
+
+textarea {
+    resize: none;
+}
