@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo-Ken-Po!!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="container__placar">
+            <div class="container__placar__item">
+                <span class="placar__texto">Vitórias</span>
+                <span id="vitorias" class="placar__numero">0</span>
+            </div>
+            <div class="container__placar__item">
+                <span class="placar__texto">Empates</span>
+                <span id="empates" class="placar__numero">0</span>
+            </div>
+            <div class="container__placar__item">
+                <span class="placar__texto">Derrotas</span>
+                <span id="derrotas" class="placar__numero">0</span>
+            </div>
+        </div>
+        <div class="container__actions">
+            <div class="container__actions__item" play-value="0" onclick="jogar(this)">
+                <img src="images/pedra.png" alt="">
+            </div>
+            <div class="container__actions__item" play-value="1" onclick="jogar(this)">
+                <img src="images/papel.png" alt="">
+            </div>
+            <div class="container__actions__item" play-value="2" onclick="jogar(this)">
+                <img src="images/tesoura.png" alt="">
+            </div>
+        </div>
+        <div class="container__result">
+            <div class="container__result__item">
+                <span id="result">Clique em um dos símbolos acima para começar!</span>
+            </div>
+        </div>
+    </main>
+    <div class="reset" onclick="reset()">
+        <span>Resetar</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

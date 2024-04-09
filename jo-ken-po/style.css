@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Tilt Neon';
+}
+
+body {
+    background-color: #ffc400;
+
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #f0f8ff;
+    box-shadow: 0 .5rem 2rem .5rem #00000036;
+
+    border-radius: 1rem;
+
+    padding: 5rem;
+
+    width: 60%;
+    min-width: 50rem;
+    max-width: 60rem;
+
+    height: 35rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 3rem;
+
+    transition: all .6s ease;
+}
+.container:hover {
+    transition: all .6s ease;
+    padding: 7rem;
+    gap: 4rem;
+}
+
+.container__placar {
+    display: flex;
+    justify-content: space-around;
+}
+.container__placar__item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    text-align: center;
+}
+.placar__texto {
+    font-size: 3rem;
+}
+.placar__numero {
+    font-family: 'Kode Mono';
+    font-size: 5rem;
+
+    align-self: center;
+}
+
+.container__actions {
+    display: flex;
+    justify-content: space-around;
+}
+.container__actions__item img {
+    height: 10rem;
+
+    background-color: #ffc400;
+    border-radius: 50%;
+}
+
+.container__result__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    font-size: 2.5rem;
+    white-space: nowrap;
+
+    width: max-content;
+
+    background-color: #ffc400;
+    border-radius: 1rem;
+
+    border: .3rem solid #cf9f00;
+    
+    padding: 2rem;
+}
+
+.reset {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+
+    background-color: #f0f8ff;
+    color: #000;    
+
+    border-radius: 1rem;
+
+    padding: 1rem;
+}
+
+.reset span {
+    font-size: 3rem;
+    font-weight: 100;
+}
