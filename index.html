@@ -28,7 +28,24 @@
             Menu Projetos HTML/CSS e JS
         </h1>
     </header>
-    <main class="container">
+    <section class="project-type__container">
+        <div class="project-type__button" id="button-todos" onclick="showTodos()" data-value="-1">
+            <span class="project-type__button__text" style="text-decoration-color: var(--cor-principal);">
+                Todos
+            </span>
+        </div>
+        <div class="project-type__button" id="button-html-css" onclick="show(document.getElementById('projetos-html-css'), this)" data-value="1">
+            <span class="project-type__button__text">
+                Projetos HTML/CSS
+            </span>
+        </div>
+        <div class="project-type__button" id="button-js" onclick="show(document.getElementById('projetos-js'), this)" data-value="2">
+            <span class="project-type__button__text">
+                Projetos JavaScript
+            </span>
+        </div>
+    </section>
+    <main class="container" id="projetos-html-css">
         <div class="item">
             <h2 class="item__title">
                 Projeto Currículo 1
@@ -229,6 +246,8 @@
                 </div>
             </div>
         </div>
+    </main>
+    <main class="container" id="projetos-js">
         <div class="item">
             <h2 class="item__title">
                 Projeto Relógio
@@ -311,22 +330,6 @@
         </div>
     </main>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            atualizarCorBase(); 
-            setInterval(atualizarCorBase, 100000); 
-        });
-    
-        function atualizarCorBase() {
-            const dataAtual = new Date();
-            const horas = dataAtual.getHours();
-            const minutos = dataAtual.getMinutes();
-            const totalMinutos = horas * 60 + minutos;
-            const hue = Math.round((totalMinutos / 1440) * 360);
-    
-            document.documentElement.style.setProperty('--cor-hue', hue.toString());
-        }
-    </script>
-    
+    <script src="Menu dos Projetos/script.js"></script>    
 </body>
 </html>

@@ -25,9 +25,47 @@ body {
 
 
 
+.project-type__container {
+
+    width: 100rem;
+    height: 15rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.project-type__button {
+    background-color: #f0f8ff;
+    border-radius: 1rem;
+    border-top: 1rem solid var(--cor-principal);
+
+    padding: 2rem;
+
+    transition: all .7s ease;
+}
+.project-type__button:hover {
+    transition: all .7s ease;
+    cursor: pointer;
+    padding: 3rem;
+}
+.project-type__button:hover .project-type__button__text{
+    transition: all .4s ease;
+    font-size: 2.5rem;
+}
+.project-type__button__text{
+    font-size: 2rem;
+
+    transition: all .4s ease;
+
+    text-decoration: underline #f0f8ff;
+}
+
+
+
 
 .container {
-    margin-top: 8rem;
+    margin-top: 0rem;
     display: flex;
     flex-flow: column-reverse;
 }
