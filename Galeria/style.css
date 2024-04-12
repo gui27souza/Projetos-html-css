@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: quicksand;
+}
+
+body {
+    background-color: #5c8ecf;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+/* Inicializando condições para quando a função for chamada */
+    #diminuir {
+        position: absolute;
+        width: 120vw;
+        height: 120vh;
+
+        background-color: rgba(0, 0, 0, 0);
+
+        z-index: -1;
+    }
+
+/* Estilização da Header */
+    .header {
+        background-color: #f0f8ff;
+        box-shadow: 0 0 2rem .2rem black;
+
+        padding: 1rem;
+        margin-top: 3rem;
+    }
+    .header h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+
+/* Organização do container */
+    .container {
+        background-color: #f0f8ff;
+
+        box-shadow: 0 .3rem 3rem .2rem black;
+
+        width: 90rem;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 1%;
+
+        padding: 1rem;
+        margin-top: 3rem;
+
+        position: relative;
+
+        overflow: hidden;
+    }
+    .item-menor {
+        width: 24.25%;
+        margin-bottom: 1rem;
+
+        border-radius: 1rem;
+    }
+    .item-menor img {
+        width: 100%;
+        height: 100%;
+    }
+    .item-maior {
+        width: 49.5%;
+
+        border-radius: 1rem;
+    }
+    .item-maior img {
+        width: 100%;
+        height: 100%;
+    }
+
+/* Funcionalidades do hover em cada imagem */
+    .img-footer {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: aliceblue;
+
+        padding: .5rem;
+
+        width: 100%;
+
+        position: absolute;
+        bottom: -4rem;
+
+        transition: all .3s ease;
+    }
+    .img-footer__text {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .item-maior,
+    .item-menor{
+        display: flex;
+        flex-flow: column;
+        position: relative;
+
+        overflow: hidden;
+
+        transform: scale(1);
+    }
+    .item-menor:hover .img-footer,
+    .item-maior:hover .img-footer{
+        position: absolute;
+        bottom: 0;
+
+        transition: all .3s ease;
+    }
+    .mask {
+        background-color: #f0f8ff28;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: scale(500);
+        
+        height: .1rem;
+        width: .1rem;
+
+        transition: all .3s ease;
+    }
+    .item-menor:hover .mask,
+    .item-maior:hover .mask {
+        transition: all .3s ease;
+        transform: scale(0.0001);
+        cursor: pointer;
+    }
+    .item-menor:hover,
+    .item-maior:hover {
+        cursor: pointer;
+    }
