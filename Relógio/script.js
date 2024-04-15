@@ -1,13 +1,6 @@
+// Área do código que muda o estilo do site de acordo com o momento do dia 
 let atual = new Date()
-
-var horasElement = document.getElementById('horas')
-var minutosElement = document.getElementById('minutos')
-
 let horas = atual.getHours()
-let minutos = atual.getMinutes()
-
-horasElement.innerText = horas.toString().padStart(2, '0')
-minutosElement.innerText = minutos.toString().padStart(2, '0')
 
 let imgTime = document.getElementById('img_time');
 
@@ -21,12 +14,24 @@ if (horas >= 18 || horas <= 4) {
     document.body.style.backgroundColor = '#ffa21f'
 }
 
+
+// Funções que atualizam o horário para que seja exatamente o atual
+
+setInterval(function() {
+    let atual = new Date()    
+    let horas = atual.getHours().toString().padStart(2,'0')
+    document.getElementById('horas').innerHTML = horas
+}, 1000)
+
+setInterval(function() {
+    let atual = new Date()    
+    let minutos = atual.getMinutes().toString().padStart(2,'0')
+    document.getElementById('minutos').innerHTML = minutos
+
+}, 1000)
+
 setInterval(function() {
     let atual = new Date()
-    
-    let segundos = atual.getSeconds()
-
-    if (segundos === 0) {
-        window.location.reload()
-    }
+    let segundos = atual.getSeconds().toString().padStart(2, '0')
+    document.getElementById('segundos').innerHTML = segundos
 }, 1000)
