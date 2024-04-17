@@ -1,0 +1,85 @@
+body {
+    font-size: 62.5%;
+    font-family: monospace;
+
+    background-color: #1c172e;
+
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #f0f8ff;
+
+    border-radius: 2rem;
+
+    width: 45rem;
+    height: 20rem;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    transition: all .4s ease;
+}
+.container:hover {
+    padding: 3rem;
+}
+.container:hover .cronometro {
+    transform: translateY(-1rem)
+}
+.container:hover .container__actions {
+    transform: translateY(1rem);
+}
+.container:hover .tempo__total {
+    font-size: 7rem;
+}
+
+.cronometro {
+    align-self: center;
+    margin-top: 3rem;
+
+    transform: translateY(0);
+
+    transition: all .4s ease;
+}
+
+.tempo__total {
+    font-size: 6rem;
+
+    transition: font-size .4s ease;
+}
+
+.container__actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    transition: all .4s ease;
+}
+
+.action {
+    background-color: #85939e;
+
+    border-radius: .5rem;
+    
+    padding: .5rem;
+
+    transition: all .4s ease;
+}
+.action:hover {
+    transition: all .1s ease;
+    background-color: #1c172e;
+    color: #f0f8ff;
+}
+
+.action span {
+    font-size: 3rem;
+    user-select: none;
+}

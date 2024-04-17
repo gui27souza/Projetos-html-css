@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="cronometro">
+            <span class="tempo__total">
+                <span class="tempo" id="minutos">00</span>:<span class="tempo" id="segundos">00</span>:<span class="tempo" id="centesimos">00</span>
+            </span>
+        </div>
+        <div class="container__actions">
+            <div class="action" id="resetar" onclick="resetar()">
+                <span>Resetar</span>
+            </div>
+            <div class="action" id="iniciar" onclick="iniciar()">
+                <span>Iniciar</span>
+            </div>
+            <div class="action" id="pausar" onclick="pausar()">
+                <span>Pausar</span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
