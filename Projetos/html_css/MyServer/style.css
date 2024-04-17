@@ -14,7 +14,7 @@ body {
     margin: auto;
 }
 
-.header__hover {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,16 +23,11 @@ body {
 
     padding: 20px;
     border-radius: 0 0 10px 10px;
-}
 
-.header {
-    border-radius: 0 0 12px 12px;
     transition: all .4s ease;
 }
 .header:hover {
-    padding: 0 2px 2px;
-    background-color: #9aff16;
-    border-radius: 0 0 12px 12px;
+    box-shadow: 0 0 0 3px  #9aff16;
 }
 
 .header__texto {
@@ -56,7 +51,7 @@ body {
     
     font-weight: bold;
 
-    text-decoration: none;
+    text-decoration: underline #0d1220;
 
     transition: all .4s ease;
 }
