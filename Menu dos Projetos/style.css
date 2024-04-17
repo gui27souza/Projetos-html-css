@@ -158,4 +158,9 @@ body {
 }
 .sobre__link a {
     color: var(--cor-hover);
+
+    font-weight: 500;
+}
+.sobre__text {
+    text-align: justify;
 }

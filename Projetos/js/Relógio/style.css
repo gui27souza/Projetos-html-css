@@ -34,13 +34,11 @@ body {
     transition: all .8s ease;
 }
 .container:hover {
-    transition: all .8s ease;
     height: 33rem;
     width: 33rem;
     gap: 2rem;
 }
 .container:hover .horario {
-    transition: all .4s ease;
     font-size: 4.5rem;
 }
 

@@ -116,8 +116,6 @@ body {
     .item-maior:hover .img-footer{
         position: absolute;
         bottom: 0;
-
-        transition: all .3s ease;
     }
     .mask {
         background-color: #f0f8ff28;
@@ -135,7 +133,6 @@ body {
     }
     .item-menor:hover .mask,
     .item-maior:hover .mask {
-        transition: all .3s ease;
         transform: scale(0.0001);
         cursor: pointer;
     }

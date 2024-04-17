@@ -57,7 +57,7 @@
 
         for (let button of button_text) {
             button.style.textDecorationColor = '#f0f8ff'
-            button[Number(botao.getAttribute('data-value'))].style.textDecorationColor = 'var(--cor-principal)'
         }
+        button_text[Number(botao.getAttribute('data-value'))].style.textDecorationColor = 'var(--cor-principal)'
     }
 //

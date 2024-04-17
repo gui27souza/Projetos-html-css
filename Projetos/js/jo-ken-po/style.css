@@ -74,6 +74,13 @@ body {
 
     background-color: #ffc400;
     border-radius: 50%;
+
+    transition: all .3s ease;
+}
+.container__actions__item:hover img {
+    transform: scale(1.2);
+
+    box-shadow: 0 0 0 .3rem #cf9f00;
 }
 
 .container__result__item {
@@ -107,9 +114,15 @@ body {
     border-radius: 1rem;
 
     padding: 1rem;
+
+    transition: all .3s ease;
 }
 
 .reset span {
     font-size: 3rem;
     font-weight: 100;
+}
+
+.reset:hover {
+    box-shadow: 0 0 0 .3rem #cf9f00;
 }

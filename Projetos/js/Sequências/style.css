@@ -49,7 +49,7 @@ body {
     color: #f0f8ff;
 
     border: .1rem solid #f0f8ff;
-    backdrop-filter: blur(.5rem) saturate(100%);
+    backdrop-filter: blur(.5rem) saturate(30%);
 
     padding: 2rem;
 
@@ -61,7 +61,6 @@ body {
     transition: all .6s ease;
 }
 .container:hover {
-    transition: all .6s ease;
     padding: 3rem;
     gap: 6rem;
 }

@@ -34,7 +34,6 @@ body {
     transition: all .7s ease;
 }
 .header:hover {
-    transition: all .7s ease;
     padding: 2.3rem;
     border-radius: 1.5rem;
 }
@@ -63,7 +62,6 @@ body {
     transition: all .7s ease;
 }
 .container:hover {
-    transition: all .7s ease;
     padding: 3rem;
 }
 
@@ -95,7 +93,6 @@ body {
 }
 
 .container__actions button:hover {
-    transition: all .5s ease;
     padding: 2rem;
     border-radius: 0;
     border: .3rem solid white;
