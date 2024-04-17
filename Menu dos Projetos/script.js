@@ -8,7 +8,7 @@ function atualizarCorBase() {
     const horas = dataAtual.getHours();
     const minutos = dataAtual.getMinutes();
     const totalMinutos = horas * 60 + minutos;
-    const hue = Math.round((totalMinutos / 1440) * 360);
+    const hue = Math.round((totalMinutos / 1440) * 360) + 120;
 
     document.documentElement.style.setProperty('--cor-hue', hue.toString());
 }
