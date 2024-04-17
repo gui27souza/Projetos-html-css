@@ -28,25 +28,36 @@
             Menu Projetos HTML/CSS e JS
         </h1>
     </header>
+
     <section class="project-type__container">
         <div class="project-type__button" id="button-todos" onclick="showTodos()" data-value="-1">
             <span class="project-type__button__text" style="text-decoration-color: var(--cor-principal);">
                 Todos
             </span>
         </div>
-        <div class="project-type__button" id="button-html-css" onclick="show(document.getElementById('projetos-html-css'), this)" data-value="1">
+
+        <div class="project-type__button" id="button-html-css" onclick="show(document.getElementsByClassName('projeto-visual'), this)" data-value="1">
             <span class="project-type__button__text">
-                Projetos HTML/CSS
+                Projetos Visuais
             </span>
         </div>
-        <div class="project-type__button" id="button-js" onclick="show(document.getElementById('projetos-js'), this)" data-value="2">
+
+        <div class="project-type__button" id="button-js" onclick="show(document.getElementsByClassName('projeto-interativo'), this)" data-value="2">
             <span class="project-type__button__text">
-                Projetos JavaScript
+                Projetos Interativos
+            </span>
+        </div>
+
+        <div class="project-type__button" id="button-sobre" onclick="show(document.getElementsByClassName('sobre'), this)" data-value="3">
+            <span class="project-type__button__text">
+                Sobre
             </span>
         </div>
     </section>
-    <main class="container" id="projetos-html-css">
-        <div class="item">
+
+    <main id="container">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto Currículo 1
             </h2>
@@ -66,7 +77,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto 1
             </h2>
@@ -86,7 +98,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto 2
             </h2>
@@ -106,7 +119,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto Lista de Contatos 1
             </h2>
@@ -126,7 +140,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto Lista de Contatos 2
             </h2>
@@ -146,7 +161,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto Moda Ora
             </h2>
@@ -166,7 +182,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto MyServer
             </h2>
@@ -186,7 +203,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto AprenSer
             </h2>
@@ -206,7 +224,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-interativo">
             <h2 class="item__title">
                 Projeto Formulário de Contato
             </h2>
@@ -226,7 +245,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-interativo">
             <h2 class="item__title">
                 Projeto Cadastro
             </h2>
@@ -246,9 +266,8 @@
                 </div>
             </div>
         </div>
-    </main>
-    <main class="container" id="projetos-js">
-        <div class="item">
+
+        <div class="item projeto-visual">
             <h2 class="item__title">
                 Projeto Relógio
             </h2>
@@ -268,7 +287,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-interativo">
             <h2 class="item__title">
                 Projeto Contador
             </h2>
@@ -288,7 +308,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-interativo">
             <h2 class="item__title">
                 Projeto Sequências
             </h2>
@@ -308,7 +329,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-interativo">
             <h2 class="item__title">
                 Projeto Jo-Ken-Po
             </h2>
@@ -328,7 +350,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-interativo">
             <h2 class="item__title">
                 Projeto Galeria
             </h2>
@@ -348,7 +371,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
+
+        <div class="item projeto-interativo">
             <h2 class="item__title">
                 Projeto Cronômetro
             </h2>
@@ -368,6 +392,24 @@
                 </div>
             </div>
         </div>
+
+        <div 
+        class="item sobre hidden-todos" 
+        style="display: none;">
+
+            <h1>
+                Criado por Guilherme Souza
+            </h1>
+
+            <p class="sobre__link">LinkedIn: <a href="https://www.linkedin.com/in/guilherme27souza/" target="_blank">Guilherme Souza</a></p>
+            <p class="sobre__link">GitHub: <a href="https://github.com/gui27souza/" target="_blank">gui27souza</a></p>
+
+            <p class="sobre__text">
+                Desenvolvedor Front End e estudante de em Sistemas de Informação na Universidade de São Paulo, fluente em inglês e com uma forte base em matemática, evidenciada por várias conquistas em olimpíadas de matemática e física. Possuo proficiência em linguagens como C, Python, JavaScript, HTML e CSS, além de conhecimentos sólidos em TI e práticas de versionamento de código.
+                Sou apaixonado por resolver problemas complexos através de soluções digitais criativas e eficientes, sempre buscando inovação e excelência técnica em meus projetos.
+            </p>
+        </div>
+
     </main>
 
     <script src="Menu dos Projetos/script.js"></script>    

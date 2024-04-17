@@ -7,14 +7,11 @@
 
     function atualizarCorBase() {
         const dataAtual = new Date();
-        const horas = dataAtual.getHours();
-        const minutos = dataAtual.getMinutes();
-        const totalMinutos = horas * 60 + minutos;
-        const hue = Math.round((totalMinutos / 1440) * 360) + 120;
+        const hue = Math.round((((dataAtual.getHours()) * 60 + (dataAtual.getMinutes())) / 1440) * 360);
 
         document.documentElement.style.setProperty('--cor-hue', hue.toString());
     }
-
+//
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,34 +25,39 @@
 
     // Função que reseta a seleção
     function showTodos() {
-        for (let container of document.getElementsByClassName('container')) {
-            container.style.display = '';
+        for (let item of document.getElementsByClassName('item')) {
+            item.style.display = '';
         }
-        button_text[0].style.textDecorationColor = 'var(--cor-principal)';
-        button_text[1].style.textDecorationColor = '#f0f8ff'
-        button_text[2].style.textDecorationColor = '#f0f8ff'
+        for (let hidden of document.getElementsByClassName('hidden-todos')) {
+            hidden.style.display = 'none'
+        }
+
+        document.getElementById('container').style.flexFlow = 'column'
+
+        // Reset da underline dos botões
+        for (let button of button_text) {
+            button.style.textDecorationColor = '#f0f8ff'
+        }
+        button_text[0].style.textDecorationColor = 'var(--cor-principal)'
     }
 
     // Função que mostra apenas o tipo de item selecionado
     function show(elemento, botao) {
-        for (let container of document.getElementsByClassName('container')) {
-            container.style.display = 'none';
+        for (let item of document.getElementsByClassName('item')) {
+            item.style.display = 'none';
         }
-        elemento.style.display = ''
+
+        for (let e of elemento) {
+            e.style.display = ''
+        }
+
+        document.getElementById('container').style.flexFlow = 'column-reverse'
 
         button_text[botao.getAttribute('data-value')].style.textDecoration = 'underline var(--cor-principal)'
 
-        switch (botao.getAttribute('data-value')) {
-            case '1' : 
-                button_text[1].style.textDecorationColor = 'var(--cor-principal)';
-                button_text[2].style.textDecorationColor = '#f0f8ff'
-                button_text[0].style.textDecorationColor = '#f0f8ff'
-            break
-
-            case '2' : 
-                button_text[2].style.textDecorationColor = 'var(--cor-principal)';
-                button_text[1].style.textDecorationColor = '#f0f8ff'
-                button_text[0].style.textDecorationColor = '#f0f8ff'
-            break
+        for (let button of button_text) {
+            button.style.textDecorationColor = '#f0f8ff'
+            button[Number(botao.getAttribute('data-value'))].style.textDecorationColor = 'var(--cor-principal)'
         }
     }
+//
