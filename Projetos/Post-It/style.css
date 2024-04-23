@@ -1,0 +1,149 @@
+:root {
+    font-size: 62.5%;
+    font-family: monospace;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(146, 39, 25);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.title {
+    background-color: rgba(255, 208, 194, 0.63);
+    box-shadow: 1rem 1rem .5rem;
+
+    border-radius: 2rem;
+    
+    width: 40%;
+
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+.title h1 {
+    font-size: 4rem;
+    text-align: center;
+    
+    padding: 1.6rem;
+}
+
+.container {
+    margin-bottom: 0;
+
+    width: 80%;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+
+    gap: 3rem;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-it {
+    background-color: beige;
+    filter: drop-shadow(0 0 .7rem black);
+
+    box-sizing: border-box;
+    padding: 2rem;
+
+    height: 27rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.post-it h2 {
+    font-size: 3rem;
+
+    text-align: center;
+
+    margin: 0;
+    margin-bottom: 2.4rem;
+}
+
+.post-it span {
+    font-size: 2rem;
+
+    text-align: justify;
+
+    margin: 0;
+}
+
+/* Efeito 1 */
+    
+    .p1{
+        background-color: transparent;
+        background-image: linear-gradient(135deg, transparent 5rem, beige 5rem)
+    }
+
+/**/
+
+/* Efeito 2 */
+    
+    .p2{
+        position: relative;
+
+        background-color: transparent;
+        background-image: 
+            linear-gradient(135deg, transparent 5rem, beige 5rem);
+    }
+
+    .p2::before {
+        content: '';
+        display: inline-block;
+
+        height: 7rem;
+        width: 7rem;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-image: linear-gradient(-45deg, rgb(128, 128, 128) 5rem, transparent 5rem);
+    }
+
+/**/
+
+/* Efeito 3 */
+    
+    .p3{
+        position: relative;
+
+        background-color: transparent;
+        background-image: 
+            linear-gradient(135deg, transparent 5rem, beige 5rem);
+    }
+
+    .p3::before {
+        content: '';
+        display: inline-block;
+
+        height: 7rem;
+        width: 7rem;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-image: 
+            linear-gradient(-45deg, beige 5rem, transparent 5rem);
+        
+        filter: drop-shadow(0 0 .7rem black);
+    }
+
+/**/
