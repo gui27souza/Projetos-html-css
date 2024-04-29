@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+:root {
+    --main-purple: rgb(159, 57, 199);
+}
+
+html, body {
+    font-size: 62.5%;
+    font-family: Nunito;
+
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: var(--main-purple);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+/* Saídas de Temperatura */
+
+    .temp-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        gap: 5rem;
+    }
+
+    .temp-container__item {
+        height: 20rem;
+        width: 50rem;
+        background-color: aqua;
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .item__text {
+        justify-self: flex-end;
+        flex-grow: 1;
+        display: flex;
+    }
+    .item__text span {
+        align-self: center;
+        font-size: 7rem;
+    }
+
+/*  */
+
+
+
+
+
+/* Termômetro */
+
+    .termometer {
+        background-color: aqua;
+        height: 100%;
+        width: 30%;
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .progress-container {
+        width: 3rem;
+        height: 50%;
+        background-color: #ddd;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .progress-bar {
+        background-color: #4CAF50;
+        height: 0%;
+        width: 60%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        color: white;
+
+        z-index: 1;
+    }
+
+    .progress-container::after {
+        content: "";
+        display: block;
+
+        height: 5rem;
+        width: 5rem;
+
+        background-image: radial-gradient(#4caf50 50%, #ddd 50%);
+        border-radius: 50%;
+
+        position: absolute;
+        left: -1rem;
+        bottom: -2.5rem;
+
+        z-index: 0;
+    }
+
+    #max, #min {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    #max::before, #min::before {
+        content: "";
+        display: block;
+
+        height: .5rem;
+        width: 2rem;
+
+        background-color: black;
+
+        position: absolute;
+        left: -3rem;
+        top: 1rem;
+
+        z-index: 2;
+    }
+
+    #max {
+        position: absolute;
+        top: 10%;
+        left: 5rem;
+    }
+
+    #min {
+        position: absolute;
+        bottom: 10%;
+        left: 5rem;
+    }
+
+/*  */
+
+
+
+
+
+/* Ações */
+
+    .actions-container form {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .actions-container select {
+        padding: 1.6rem;
+
+        border: none;
+        background-color: aqua;
+        font-size: 2.4rem;
+    }
+
+    .actions-container input[type="number"] {
+        padding: 1.6rem;
+        border: none;
+        background-color: aqua;
+        font-size: 2.4rem;
+        width: 15rem;
+        box-sizing: border-box;
+    }
+
+    .actions-container input[type="submit"] {
+        padding: 1.6rem;
+        border: none;
+        background-color: aqua;
+        font-size: 2.4rem;
+        width: 15rem;
+        box-sizing: border-box;
+    }
+
+/*  */

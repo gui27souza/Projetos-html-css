@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Termometers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="temp-container">
+            <div class="temp-container__item">
+                <h1>
+                    Celsius
+                </h1>
+                <div class="item__text">
+                    <span id="span-celsius"></span>
+                </div>
+            </div>
+            <div class="temp-container__item">
+                <h1>
+                    Fahrenheit 
+                </h1>
+                <div class="item__text">
+                    <span id="span-fahrenheit"></span>
+                </div>
+            </div>
+            <div class="temp-container__item">
+                <h1>
+                    Kelvin
+                </h1>
+                <div class="item__text">
+                    <span id="span-kelvin"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="termometer">
+            <div class="progress-container">
+                <span id="max">100</span>
+                <div class="progress-bar" style="height: 0%;" id="termometer-progress"></div>
+                <span id="min">0</span>
+            </div>
+        </div>    
+    </div>
+
+    <div class="actions-container">
+        <form method="get" id="input-form">
+            <select id="temperatureUnit" name="temperatureUnit">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+            <input type="number" name="temperature">
+            <input type="submit">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
