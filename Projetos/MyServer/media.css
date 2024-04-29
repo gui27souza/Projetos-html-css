@@ -1,0 +1,27 @@
+@media screen and (orientation: portrait){
+
+    body {
+        width: 100%;
+    }
+    
+    .container {
+        flex-flow: column;
+
+        margin: 0 10rem;
+    }
+
+    .plano {
+        flex-flow: row;
+
+        width: 100%;
+    }
+
+    .plano__tipo {
+        height: min-content;
+    }
+
+    .plano__button {
+        display: flex;
+        align-items: flex-end;
+    }
+}
