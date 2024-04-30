@@ -103,3 +103,20 @@
     }
 
 //
+
+
+
+
+// Local
+
+    let on = 0
+
+    function activateLocal() {
+        if (!on) {
+            document.getElementById('local').style.display = "flex"
+            on = 1
+        } else {
+            document.getElementById('local').style.display = "none"
+            on = 0
+        }
+    }

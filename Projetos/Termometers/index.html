@@ -42,6 +42,24 @@
                 <span id="min">0</span>
             </div>
         </div>    
+
+        <div class="local" id="local">
+            <div class="local__img">
+                <img src="" alt="">
+            </div>
+            <div class="local__location">
+                <span id="location"></span>
+            </div>
+            <div class="local__temp">
+                <div class="local-min">
+                    <span id="local-min"></span>
+                </div>
+                <div class="local-max">
+                    <span id="local-max"></span>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="actions-container">
@@ -53,6 +71,7 @@
             </select>
             <input type="number" name="temperature">
             <input type="submit">
+            <input type="button" value="Local" onclick="activateLocal()">
         </form>
     </div>
     
