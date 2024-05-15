@@ -1,471 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+
     <title>Menu</title>
-    <link rel="stylesheet" href="Menu dos Projetos/style.css">
 
-    <style>
-        :root {
-            font-family: Roboto;
-            font-size: 62.5%;
+    <link rel="stylesheet" href="css/reset.css">
 
-            height: 100%;
-            margin: 0;
-
-            --cor-hue: 180;
-            --cor-saturation: 70%;
-
-            --cor-principal: hsl(var(--cor-hue), var(--cor-saturation), 50%);
-            --cor-background: hsl(var(--cor-hue), var(--cor-saturation), 65%);
-            --cor-hover: hsl(var(--cor-hue), var(--cor-saturation), 40%);
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/actions.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/sobre.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title">
-            Menu Projetos HTML/CSS e JS
+
+    <div class="header">
+        <h1>
+            Menu Projetos <br>
+            HTML/CSS e JS
         </h1>
-    </header>
+    </div>
+<!-- 
+    <div class="actions">
 
-    <section class="project-type__container">
-        <div class="project-type__button" id="button-todos" onclick="showTodos()" data-value="-1">
-            <span class="project-type__button__text" style="text-decoration-color: var(--cor-principal);">
-                Todos
-            </span>
-        </div>
+        <input  type="button" 
+                value="Todos" 
+                class="actions__button" 
+                id="button-todos"
+        >
 
-        <div class="project-type__button" id="button-html-css" onclick="show(document.getElementsByClassName('projeto-visual'), this)" data-value="1">
-            <span class="project-type__button__text">
-                Projetos Visuais
-            </span>
-        </div>
+        <input  type="button"
+                value="Visuais"
+                class="actions__button"
+                id="button-visuais"
+        >
 
-        <div class="project-type__button" id="button-js" onclick="show(document.getElementsByClassName('projeto-interativo'), this)" data-value="2">
-            <span class="project-type__button__text">
-                Projetos Interativos
-            </span>
-        </div>
+        <input  type="button"
+                value="Interativos"
+                class="actions__button"
+                id="button-interativos"
+        >
 
-        <div class="project-type__button" id="button-sobre" onclick="show(document.getElementsByClassName('sobre'), this)" data-value="3">
-            <span class="project-type__button__text">
-                Sobre
-            </span>
-        </div>
-    </section>
+        <input  type="button"
+                value="Sobre"
+                class="actions__button"
+                id="button-sobre"
+        >
 
-    <main id="container">
+    </div>
+
+    <div id="container">
 
         <div class="item projeto-visual">
+            <div class="item__img">
+                <img src="Menu dos Projetos/images/curriculo-1.png" alt="">
+            </div>
             <h2 class="item__title">
                 Projeto Currículo 1
             </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/curriculo-1.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Currículo simples
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Curriculo-1/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
+            <p class="item__description">
+                Currículo simples
+            </p>
+            <span class="item__link">
+                <a href="Projetos/Curriculo-1/index.html" target="_blank">Acesse o Projeto</a>
+            </span>
         </div>
 
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto 1
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/projeto-1.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Exemplo de página simples.
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Projeto-1/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <div class="sobre hidden-todos">
 
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto 2
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/projeto-2.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Exemplo de página simples.
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Projeto-2/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto Lista de Contatos 1
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/lista_contatos_1.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Lista de contatos em um único bloco com scroll, na qual cada contato tem uma foto de perfil, o nome e email do contato, e a opção de editar ou excluir o contato.
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Listas de Contatos 1/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto Lista de Contatos 2
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/lista_contatos_2.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Lista de contatos semelhante à primeira lista, porém a disposição dos contatos é feita em uma grade.
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Listas de Contatos 2/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto Moda Ora
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/modaOra.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Site de moda com diversas seções, imagens e textos
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Moda Ora/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto MyServer
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/myServer.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Site de venda de planos, com 3 tipos diferentes
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/MyServer/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto AprenSer
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/aprenSer.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Site de escola com diversas seções, bem estilizado e organizado
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/AprenSer/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Formulário de Contato
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/formulario.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Site com um formulario preenchível de contato
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Formulário/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Cadastro
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/cadastro.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Site com 2 páginas, uma para login e outra para cadastro
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Cadastro/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto Relógio
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/relogio.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Site com um relógio funcional, que se adapta de acordo com o horário do dia.
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Relógio/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Contador
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/contador.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Site com um contador funcional, com as opções de incrementar, decrementar e resetar.
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Contador/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Sequências
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/sequencias.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Site com um criador de sequêncais numéricas crescentes e decresncentes, sendo possível escolher o intervalo e o elemento que irá separar os valores na saída. 
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Sequências/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Jo-Ken-Po
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/jokenpo.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Jogo de pedra, papel e tesoura funcional contra o computador com placar funcional 
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/jo-ken-po/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Galeria
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/galeria.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Galeria simples, com a função de ampliar uma imagem com o clique 
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Galeria/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Cronômetro
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/cronometro.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Cronômetro funcional com centésimos de segundos, segundos e minutos, podendo pausar e resetar a contagem
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Cronômetro/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Calculadora
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/calculadora.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Calculadora funcional com as quatro operações básicas
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="https://gui27souza.github.io/Projeto-Calculadora/" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-visual">
-            <h2 class="item__title">
-                Projeto Post-It
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/post-it.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Evolução passo a passo da contrução de elementos no formato de Post-its
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="Projetos/Post-It/index.html" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item projeto-interativo">
-            <h2 class="item__title">
-                Projeto Termômetros
-            </h2>
-            <div class="item__content">
-                <div class="item__content__img">
-                    <img src="Menu dos Projetos/images/termometers.png" alt="">
-                </div>
-                <div class="item__content__description">
-                    <p>
-                        Conversor de temperaturas com as unidades Celsius, Fahrenheit e Kelvin, com um termômetro visual
-                    </p>
-                </div>
-                <div class="item__content__link">
-                    <p>
-                        <a href="https://gui27souza.github.io/Projeto-Termometers/" target="_blank">Acesse o Projeto</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div 
-        class="item sobre hidden-todos" 
-        style="display: none;">
-
-            <h1>
+            <h2>
                 Criado por Guilherme Souza
-            </h1>
+            </h2>
 
-            <p class="sobre__link">LinkedIn: <a href="https://www.linkedin.com/in/guilherme27souza/" target="_blank">Guilherme Souza</a></p>
-            <p class="sobre__link">GitHub: <a href="https://github.com/gui27souza/" target="_blank">gui27souza</a></p>
+            <span class="sobre__link">LinkedIn: <a href="https://www.linkedin.com/in/guilherme27souza/" target="_blank">Guilherme Souza</a></span>
+            <span class="sobre__link">GitHub: <a href="https://github.com/gui27souza/" target="_blank">gui27souza</a></span>
 
             <p class="sobre__text">
                 Desenvolvedor Front End e estudante de em Sistemas de Informação na Universidade de São Paulo, fluente em inglês e com uma forte base em matemática, evidenciada por várias conquistas em olimpíadas de matemática e física. Possuo proficiência em linguagens como C, Python, JavaScript, HTML e CSS, além de conhecimentos sólidos em TI e práticas de versionamento de código.
@@ -473,8 +84,8 @@
             </p>
         </div>
 
-    </main>
+    </div> -->
 
-    <script src="Menu dos Projetos/script.js"></script>    
+    <!-- <script src="Menu dos Projetos/script.js"></script> -->
 </body>
 </html>
