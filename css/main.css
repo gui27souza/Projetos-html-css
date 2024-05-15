@@ -4,7 +4,7 @@
     font-family: Roboto;
     font-size: 62.5%;
 
-    --cor-hue: 180;
+    --cor-hue: 240;
     --cor-saturation: 70%;
 
     --cor-principal: hsl(var(--cor-hue), var(--cor-saturation), 50%);
