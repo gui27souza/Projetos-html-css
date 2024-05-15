@@ -1,8 +1,4 @@
 .actions {
-    /* margin-top: 5rem; */
-
-    height: 16.4rem;
-
     width: 100%;
 
     display: flex;
@@ -17,28 +13,6 @@
     gap: 4vw;
 }
 
-.actions__button {
-    background-color: var(--cor-white);
-
-    border-radius: 1rem;
-    border-top: 1rem solid var(--cor-principal);
-    
-    font-size: 2.4rem;
-
-    height: 6.4rem;
-
-    box-sizing: border-box;
-
-    padding: 1rem 2rem 1.5rem;
-
-    transition: padding .7s ease, height .7s ease;
-}
-.actions__button:hover {
-    cursor: pointer;
-    padding: 1.5rem 2.5rem 2rem;
-    height: 7.4rem;
-}
-
 .actions-select select {
     background-color: var(--cor-white);
 
@@ -50,6 +24,10 @@
 
 @media screen
 and (max-width: 600px) {
+
+    .actions {
+        margin: 5rem 0 ;
+    }
 
     .actions-input {
         display: none;
@@ -73,6 +51,7 @@ and (max-width: 600px) {
         max-width: 25rem;
         width: 100%;
     }
+    
 }
 
 @media screen
@@ -87,8 +66,33 @@ and (max-width: 350px) {
 @media screen
 and (min-width: 601px) {
 
+    .actions {
+        height: 16.4rem;
+    }
+
     .actions-select {
         display: none;
     }
 
+    .actions__button {
+        background-color: var(--cor-white);
+    
+        border-radius: 1rem;
+        border-top: 1rem solid var(--cor-principal);
+        
+        font-size: 2.4rem;
+    
+        height: 6.4rem;
+    
+        box-sizing: border-box;
+    
+        padding: 1rem 2rem 1.5rem;
+    
+        transition: padding .7s ease, height .7s ease;
+    }
+    .actions__button:hover {
+        cursor: pointer;
+        padding: 1.5rem 2.5rem 2rem;
+        height: 7.4rem;
+    }
 }
