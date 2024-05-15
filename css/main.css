@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    font-family: Roboto;
+    font-size: 62.5%;
+
+    --cor-hue: 180;
+    --cor-saturation: 70%;
+
+    --cor-principal: hsl(var(--cor-hue), var(--cor-saturation), 50%);
+    --cor-background: hsl(var(--cor-hue), var(--cor-saturation), 65%);
+    --cor-hover: hsl(var(--cor-hue), var(--cor-saturation), 40%);
+
+    --cor-white: #f8f0ff;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: var(--cor-background);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
