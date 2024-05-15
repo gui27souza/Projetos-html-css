@@ -22,7 +22,7 @@ and (max-width: 500px) {
 }
 
 @media screen
-and (max-width: 200px) {
+and (max-width: 320px) {
 
     .header {
         font-size: 1.6rem;
