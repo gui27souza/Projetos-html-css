@@ -1,0 +1,159 @@
+#container {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+}
+
+.item {
+    background-color: var(--cor-white);
+    
+    border-radius: 1rem;
+    border-top: 1rem solid var(--cor-principal);
+
+    padding: .75rem 1rem 1rem;
+    
+    display: flex;
+}
+
+.item__img {
+    border-radius: .5rem;
+
+    order: 2;
+}
+
+.item__img img {
+    width: 100px;
+}
+
+.item__title {
+    font-weight: 450;
+
+    order: 1;
+}
+
+.item__description {
+    order: 3;
+}
+
+.item__link {
+    order: 4;
+}
+
+.item__link a {
+    display: inline-block;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-white);
+
+    border-radius: 1rem;
+
+    text-align: center;
+}
+
+
+@media screen
+and (max-width: 320px) {
+    .item {
+        height: unset;
+        min-height: 10rem;
+
+        flex-flow: column;
+        /* justify-content: space-between; */
+    }
+    .item__title {
+        font-size: 1.8rem;
+        text-align: left;
+
+        margin-bottom: 1rem;
+    }
+    .item__description {
+        font-size: 1.4rem;
+
+        flex-grow: 1;
+
+        margin-bottom: 1rem;
+    }
+    .item__img {
+        display: none;
+    }
+    .item__link {
+        width: 100%;
+    }
+    .item__link a {
+        width: 100%;
+        padding: .5rem 0;
+
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen
+and (min-width: 321px) 
+and (max-width: 550px) {
+    .item {
+        flex-flow: column;
+        height: 50vw;
+        min-height: 20rem;
+
+        justify-content: flex-start;
+        gap: .5rem;
+    }
+
+    .item__title {
+        text-align: center;
+        font-size: 4vw;
+
+        order: 1;
+    }
+
+    .item__img {
+        height: 50%;
+
+        display: flex;
+        justify-content: center;
+
+        order: 2;
+    }
+    .item__img img {
+        height: 100%;
+        width: unset;
+
+        object-fit: cover;
+    }
+
+    .item__description {
+        font-size: 1.8rem;
+
+        margin-left: 1rem;
+
+        flex-grow: 1;
+
+        order: 3;
+    }
+
+    .item__link {
+        text-align: center;
+
+        order: 4;
+    }
+
+    .item__link a {
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media screen
+and (min-width: 321px) 
+and (max-width: 400px) {
+
+    .item__description {
+        font-size: 1.6rem;
+    }
+
+    .item__link a {
+        font-size: 1.2rem;
+    }
+
+}
