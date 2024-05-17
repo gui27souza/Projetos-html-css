@@ -13,6 +13,11 @@
     gap: 4vw;
 }
 
+.actions-input input {
+    width: 16rem;
+    text-align: center;
+}
+
 .actions-select select {
     background-color: var(--cor-white);
 
@@ -23,7 +28,7 @@
 }
 
 @media screen
-and (max-width: 600px) {
+and (max-width: 750px) {
 
     .actions {
         margin: 5rem 0 ;
@@ -64,7 +69,7 @@ and (max-width: 350px) {
 
 
 @media screen
-and (min-width: 601px) {
+and (min-width: 751px) {
 
     .actions {
         height: 16.4rem;
