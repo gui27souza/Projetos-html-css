@@ -1,0 +1,22 @@
+:root {
+    font-size: 62.5%;
+    font-family: sans-serif;
+
+    --primary-color: #612674;
+    --primary-color-hover: color-mix(in srgb, var(--primary-color), white 20%);
+    --white: #f0f8ff;
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--white);
+}
+
+.maxWidth {
+    max-width: 140rem;
+    
+    margin: auto;
+}

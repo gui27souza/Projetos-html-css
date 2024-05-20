@@ -1,0 +1,165 @@
+.hero-banner {
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-banner h1 {
+    font-weight: 600;
+}
+
+.hero-banner p {
+    font-weight: 500;
+}
+
+.hero-banner a {
+    color: var(--white);
+    background-color: rgb(41, 116, 187);
+
+    border-radius: .5rem;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+@media screen
+and (max-width: 500px) {
+    .hero-banner {
+        color: var(--primary-color);
+
+        margin-top: 2rem;
+        gap: 1.5rem;
+    }
+
+    .hero-banner img {
+        display: none;
+    }
+
+    .hero-banner h1 {
+        font-size: 6vw;
+
+        margin: 0 4rem;
+    }
+    
+    .hero-banner p {
+        font-size: 5vw;
+
+        margin: 0 4rem;
+    }
+
+    .hero-banner a {
+        font-size: 5vw;
+    }
+}
+
+@media screen
+and (max-width: 300px) {
+    .hero-banner h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-banner p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen
+and (min-width: 501px)
+and (max-width: 930px) {
+
+    .hero-banner__img {
+        height: 10rem;
+    }
+
+    .hero-banner {
+        background-image: linear-gradient(var(--primary-color), var(--white) 60%);
+
+        color: var(--primary-color);
+        height: 35vh;
+    }
+
+    .hero-banner h1 {
+        font-size: 3rem;
+
+        margin: 0 4rem;
+    }
+    
+    .hero-banner p {
+        font-size: 2rem;
+
+        margin: 0 4rem;
+    }
+
+    .hero-banner a {
+        font-size: 2rem;
+    }
+}
+
+@media screen
+and (min-width: 931px)
+and (max-width: 1100px) {
+
+    .hero-banner {
+        background-color: var(--primary-color);
+        color: var(--white);
+
+        height: 45vh;
+    }
+
+    .hero-banner__img {
+        height: 10rem;
+    }
+
+    .hero-banner h1 {
+        font-size: 3.5rem;
+
+        margin: 0 4rem;
+    }
+    
+    .hero-banner p {
+        font-size: 2.5rem;
+
+        margin: 0 10rem;
+    }
+
+    .hero-banner a {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen
+and (min-width: 1101px) {
+    .hero-banner {
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        background-size: cover;
+
+        color: var(--white);
+
+        height: 60vh;
+    }
+
+    .hero-banner__img {
+        height: 15rem;
+    }
+
+    .hero-banner h1 {
+        font-size: 3.5rem;
+
+        margin: 0 4rem;
+    }
+    
+    .hero-banner p {
+        font-size: 2.5rem;
+
+        margin: 0 35rem;
+    }
+
+    .hero-banner a {
+        font-size: 2.5rem;
+    }
+}
