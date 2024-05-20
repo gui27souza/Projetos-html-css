@@ -21,26 +21,16 @@
     padding: .75rem 1rem 1rem;
     
     display: flex;
+    
+    transition: transform .2s ease;
 }
 
-.item__img {
-    border-radius: .5rem;
-
-    order: 2;
+.item__img img {
+    border-radius: .75rem;
 }
 
 .item__title {
     font-weight: 450;
-
-    order: 1;
-}
-
-.item__description {
-    order: 3;
-}
-
-.item__link {
-    order: 4;
 }
 
 .item__link a {
@@ -53,6 +43,12 @@
 
     text-align: center;
     text-decoration: none;
+
+    transition: background-color .5s ease;
+}
+
+.item__link a:hover {
+    background-color: var(--cor-hover);
 }
 
 
@@ -63,6 +59,10 @@ and (max-width: 320px) {
         height: 18rem;
 
         flex-flow: column;
+    }
+
+    .item:hover {
+        transform: scale(1.05);
     }
     .item__title {
         font-size: 1.6rem;
@@ -104,6 +104,10 @@ and (max-width: 550px) {
         gap: 1rem;
 
         outline: 2px solid var(--cor-principal);
+    }
+
+    .item:hover {
+        transform: scale(1.05);
     }
 
     .item__title {
@@ -155,6 +159,10 @@ and (max-width: 550px) {
 and (min-width: 321px) 
 and (max-width: 400px) {
 
+    .item__img {
+        height: 11rem;
+    }
+
     .item__description {
         font-size: 1.6rem;
     }
@@ -178,6 +186,10 @@ and (max-width: 850px) {
         min-height: 20rem;
     }
 
+    .item:hover {
+        transform: scale(1.07);
+    }
+
     .item__title {
         order: 1;
 
@@ -187,6 +199,8 @@ and (max-width: 850px) {
     }
 
     .item__img {
+        order: 2;
+
         width: calc(40% - .5rem);
 
         display: flex;
@@ -199,6 +213,8 @@ and (max-width: 850px) {
     }
 
     .item__description {
+        order: 3;
+
         height: 30%;
         width: calc(60% - .5rem);
 
@@ -210,6 +226,8 @@ and (max-width: 850px) {
     }
 
     .item__link {
+        order: 4;
+
         display: block;
         height: fit-content;
         width: 100%;
@@ -241,12 +259,16 @@ and (min-width: 851px) {
     .item {
         flex-flow: column;
 
-        height: 40rem;
+        height: 35rem;
 
         width: 30rem;
 
         justify-content: flex-start;
         gap: .5rem;
+    }
+
+    .item:hover {
+        transform: scale(1.1);
     }
 
     .item__title {
