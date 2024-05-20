@@ -7,7 +7,7 @@
 
     function atualizarCorBase() {
         const dataAtual = new Date();
-        const hue = Math.round((((dataAtual.getHours()) * 60 + (dataAtual.getMinutes())) / 1440) * 360) + 120;
+        const hue = Math.round((((dataAtual.getHours()) * 60 + (dataAtual.getMinutes())) / 1440) * 360) + 0;
 
         document.documentElement.style.setProperty('--cor-hue', hue.toString());
     }
