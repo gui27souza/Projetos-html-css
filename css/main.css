@@ -4,12 +4,12 @@
     font-family: Roboto;
     font-size: 62.5%;
 
-    --cor-hue: 240;
+    --cor-hue: 0;
     --cor-saturation: 70%;
 
     --cor-principal: hsl(var(--cor-hue), var(--cor-saturation), 50%);
     --cor-background: hsl(var(--cor-hue), var(--cor-saturation), 65%);
-    --cor-hover: hsl(var(--cor-hue), var(--cor-saturation), 40%);
+    --cor-hover: hsl(var(--cor-hue), var(--cor-saturation), 25%);
 
     --cor-white: #f8f0ff;
 }
