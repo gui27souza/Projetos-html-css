@@ -1,2 +1,9 @@
+Menu
+    - Adicionar filtros no select opt
+    - criar um sistema de filtros mais específicos/ordenador
+    - buscar uma forma mais "bonita" do color system 
+
+
+
 Projeto Currículo
     - Iniciei a implementação de Responsividade
