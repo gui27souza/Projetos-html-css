@@ -1,0 +1,2 @@
+Projeto Currículo
+    - Iniciei a implementação de Responsividade
