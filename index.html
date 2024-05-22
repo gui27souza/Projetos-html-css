@@ -38,7 +38,7 @@
             <input  type="button"
                     value="Visuais"
                     class="actions__button"
-                    id="button-visuais"
+                    id="button-Visuais"
                     onclick="cardSelector(this)"
             >
             
@@ -46,6 +46,13 @@
                     value="Interativos"
                     class="actions__button"
                     id="button-Interativos"
+                    onclick="cardSelector(this)"
+            >
+            
+            <input  type="button"
+                    value="Responsivos"
+                    class="actions__button"
+                    id="button-Responsivos"
                     onclick="cardSelector(this)"
             >
             
@@ -59,11 +66,33 @@
         </div>
             
         <div class="actions-select">
-            <select name="" id="">
-                <option value="Todos">Todos</option>
-                <option value="Visuais">Visuais</option>
-                <option value="Interativos">Interativos</option>
-                <option value="Sobre">Sobre</option>
+            <select name="actions__select" id="select">
+                
+                <option value="Todos" 
+                onclick="cardSelector(this)">
+                    Todos
+                </option>
+
+                <option value="Visuais" 
+                onclick="cardSelector(this)">
+                    Visuais
+                </option>
+
+                <option value="Interativos" 
+                onclick="cardSelector(this)">
+                    Interativos
+                </option>
+
+                <option value="Responsivos" 
+                onclick="cardSelector(this)">
+                    Responsivos
+                </option>
+
+                <option value="Sobre" 
+                onclick="cardSelector(this)">
+                    Sobre
+                </option>
+
             </select>
         </div>
 

@@ -139,3 +139,13 @@
     }
 
 // 
+
+
+
+// Adaptação da função para o select em telas menores
+
+    document.getElementById('select').addEventListener('change', function() {
+        cardSelector(this)
+    })
+
+// 
