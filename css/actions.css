@@ -14,7 +14,7 @@
 }
 
 .actions-input input {
-    width: 16rem;
+    width: 18rem;
     text-align: center;
 
     text-decoration: underline;
@@ -31,7 +31,7 @@
 }
 
 @media screen
-and (max-width: 850px) {
+and (max-width: 1140px) {
 
     .actions {
         margin: 5rem 0 ;
@@ -44,7 +44,7 @@ and (max-width: 850px) {
     .actions-select {
         display: block;
 
-        width: 100%;
+        width: 80%;
 
         margin: 0 5rem;
 
@@ -56,7 +56,7 @@ and (max-width: 850px) {
         font-size: 2.4rem;
         
         min-width: 15rem;
-        max-width: 25rem;
+        /* max-width: 25rem; */
         width: 100%;
     }
     
@@ -72,7 +72,7 @@ and (max-width: 350px) {
 
 
 @media screen
-and (min-width: 851px) {
+and (min-width: 1141px) {
 
     .actions {
         height: 16.4rem;
@@ -100,7 +100,7 @@ and (min-width: 851px) {
     }
     .actions__button:hover {
         cursor: pointer;
-        padding: 1.5rem 2.5rem 2rem;
+        padding: 1.5rem 2rem 2rem;
         height: 7.4rem;
         width: 18rem;
     }
