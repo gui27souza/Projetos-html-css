@@ -1,3 +1,7 @@
+:root {
+    font-size: 62.5%;
+}
+
 body {
     background-color: rgb(226, 218, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -5,14 +9,125 @@ body {
     margin: auto;
 }
 
-h1 {
-    font-size: 42px;
-    background-color: rgb(166, 166, 218);
-    color: rgb(17, 0, 94);
-    padding: 6px 0px;
-    margin-bottom: 0;
-    border-bottom: 5px inset #00004e;
-}
+
+/* Header */
+
+    .header__title {
+        background-color: #a6a6da;
+        color: #11005e;
+        
+        border-bottom: 5px inset #00004e;
+
+        text-align: center;
+        font-size: 4.2rem;
+        
+        margin-bottom: 0;
+        
+        padding: .6rem;
+    }
+
+    .header__subtitle {
+        background-color: #6b6bff;
+
+        text-align: center;
+        font-size: 2rem;
+
+        display: inline-block;
+
+        margin-top: 0;
+        margin-left: 0;
+
+        width: 100%;
+    }
+
+    @media screen
+    and (max-width: 360px) {
+        .header__title {
+            font-size: 10vw;
+        }
+
+        .header__subtitle {
+            font-size: 1.6rem;
+        }
+    }
+
+/**/
+
+
+/* Links */
+
+    .links {
+        width: 100%;
+
+        display: flex;
+        justify-content: right;
+        gap: 1rem;
+    }
+
+    .links__button {
+        background-color: #b2b2c7;
+        color: #00004e;
+
+        display: block;
+
+        padding: 1.6rem 0;
+
+        font-size: 2.2rem;
+    }
+
+    .links__button:hover {
+        background-color: #00004e;
+        color: white;
+    }
+
+    .links__button:hover a {
+        text-decoration: none;
+    }
+
+    .links__button a {
+        color: unset;
+    }
+
+    @media screen
+    and (max-width: 700px) {
+        .links {
+            justify-content: center;
+        }
+
+        .links__button {
+            flex-grow: 1;
+            text-align: center;
+        }
+    }
+    
+    @media screen
+    and (max-width: 500px) {
+        .links__button {
+            font-size: 2rem;
+        }
+    }
+    
+    @media screen
+    and (max-width:350px) {
+        .links__button {
+            font-size: 1.6rem;
+        }
+    }
+
+    @media screen
+    and (max-width: 255px) {
+        .links {
+            flex-flow: column;
+        }
+        .links__button {
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    }
+
+/**/
+
+
 
 h2 {
     font-size: 32px;
@@ -49,38 +164,4 @@ li {
     margin-right: 50px;
     list-style-position: outside;
     color: rgb(44, 44, 44);
-}
-
-#subtitulo {
-    display: inline-block;
-    text-align: center;
-    font-size: 20px;
-    background-color: #6b6bff;
-    margin-top: 0;
-    margin-left: 0;
-    width: 100%;
-}
-
-.menu {
-    text-align: right;
-    margin-top: 1px;    
-    margin-bottom: 50px;
-}
-
-.menu li {
-    list-style: none;
-    display: inline;
-    margin-right: 0;
-    margin-left: 1px;
-}
-
-.menu a {
-    background-color: #b2b2c7;
-    color: #00004e;
-    padding: 16px;
-    text-decoration: none;
-}
-.menu a:hover {
-    background-color: #00004e;
-    color: white;
 }
