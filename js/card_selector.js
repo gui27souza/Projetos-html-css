@@ -13,7 +13,11 @@
         // Verifica qual botão foi acionado de acordo com seu atributo
         var card_type = this_input.value
 
-        if (card_type == "Todos") {
+        // Caso: Sobre
+        if (card_type == "Sobre") sobre()
+
+        // Caso: Todos 
+        else if (card_type == "Todos") {
 
             // Reseta a ordem dos cards, colocando os mais antigos primeiro
             ajustaOrdem()
@@ -32,7 +36,11 @@
             // Coloca underline só no input Todos
             document.getElementById("button-todos").style.textDecorationColor = "var(--cor-principal)"
 
-        } else {
+            // Torna o sobre invisível, se necessário
+            sobre_element.style.display = "none"
+        } 
+        // Caso: Outro
+        else {
 
             // Função para colocar os cards mais recentes primeiro
             inverterOrdem()
@@ -54,10 +62,10 @@
             // Coloca underline só no input selecionado
             this_input.style.textDecorationColor = "var(--cor-principal)"
 
+            // Torna o sobre invisível, se necessário
+            sobre_element.style.display = "none"
         }
 
-        // Torna o sobre invisível, se necessário
-        sobre_element.style.display = "none"
     }
 
 // 
@@ -71,15 +79,15 @@
         for (let item of all_items) {
             item.style.display = "none"
         }
+        
+        // Torna o sobre visível
+        sobre_element.style.display = "block"
 
         // Limpa o underline dos inputs
         for (let input of all_inputs) {
             input.style.textDecorationColor = "var(--cor-white)"
         }
 
-        // Torna o sobre visível
-        sobre_element.style.display = "block"
-        
         // Coloca o underline no input Sobre
         document.getElementById("button-sobre").style.textDecorationColor = "var(--cor-principal)"
 

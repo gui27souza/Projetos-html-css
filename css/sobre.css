@@ -1,4 +1,6 @@
 .sobre {
+    display: none;
+    
     background-color: var(--cor-white);
     border-top: 1vw solid var(--cor-principal);
     border-radius: 1vw;
