@@ -70,7 +70,7 @@ body {
 
         display: block;
 
-        padding: 1.6rem 0;
+        padding: 1.6rem;
 
         font-size: 2.2rem;
     }
@@ -97,6 +97,7 @@ body {
         .links__button {
             flex-grow: 1;
             text-align: center;
+            padding: 1.6rem 0;
         }
     }
     
@@ -129,25 +130,39 @@ body {
 
 
 
-h2 {
-    font-size: 32px;
-    background-color: #bababe;
-    color: #000074;
-    padding: 7px;
-    border-bottom: 4px solid #00009c;
-}
 
-h3 {
-    font-size: 27px;
-    margin-left: 50px;
-}
 
-p {
-    font-size: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    color: rgb(44, 44, 44);
-}
+/* Sections Gerais */
+
+    .section h2 {
+        background-color: #bababe;
+        color: #000074;
+
+        border-bottom: .4rem solid #00009c;
+        
+        font-size: 3.2rem;
+        
+        padding: .7rem;
+    }
+
+    .section h3 {
+        font-size: 2.7rem;
+        margin-left: 5rem;
+    }
+
+    .section h4 {
+        font-size: 2.4rem;
+        margin-left: 5rem;
+    }
+
+    .section p {
+        font-size: 2.4rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        color: #2c2c2c;
+    }
+
+/**/
 
 a {
     font-weight: bold;
@@ -163,5 +178,5 @@ li {
     margin-left: 50px;
     margin-right: 50px;
     list-style-position: outside;
-    color: rgb(44, 44, 44);
+    color: #2c2c2c;
 }
